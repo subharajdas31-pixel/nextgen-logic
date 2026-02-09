@@ -1,86 +1,43 @@
 <!DOCTYPE html>
-<html lang="bn">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nextgen-logic | Innovative Solutions</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>NextGen Logic</title>
     <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
-        body { line-height: 1.6; color: #333; scroll-behavior: smooth; }
-        nav { background: #1a1a2e; color: #fff; padding: 1rem 5%; display: flex; justify-content: space-between; align-items: center; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.3); }
-        nav .logo { font-size: 1.5rem; font-weight: bold; color: #00d2ff; }
-        nav ul { display: flex; list-style: none; }
-        nav ul li { margin-left: 20px; }
-        nav ul li a { color: #fff; text-decoration: none; font-size: 1rem; transition: 0.3s; }
-        nav ul li a:hover { color: #00d2ff; }
-        #home { height: 100vh; background: linear-gradient(rgba(26, 26, 46, 0.7), rgba(26, 26, 46, 0.7)), url('https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&q=80&w=1470') no-repeat center center/cover; display: flex; flex-direction: column; justify-content: center; align-items: center; color: #fff; text-align: center; padding: 0 20px; }
-        #home h1 { font-size: 3.5rem; margin-bottom: 1rem; }
-        #home p { font-size: 1.3rem; max-width: 700px; margin-bottom: 2rem; }
-        section { padding: 100px 10% 60px; }
-        h2 { text-align: center; margin-bottom: 40px; font-size: 2.5rem; color: #1a1a2e; border-bottom: 3px solid #00d2ff; display: inline-block; left: 50%; transform: translateX(-50%); position: relative; }
-        .services-container { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; margin-top: 40px; }
-        .service-box { padding: 40px; background: #fff; border-radius: 15px; text-align: center; transition: 0.3s; box-shadow: 0 5px 15px rgba(0,0,0,0.1); border-top: 5px solid #00d2ff; }
-        .service-box:hover { transform: translateY(-10px); box-shadow: 0 15px 30px rgba(0,0,0,0.2); }
-        .service-box i { font-size: 3rem; color: #1a1a2e; margin-bottom: 20px; }
-        .contact-info { display: flex; justify-content: space-around; flex-wrap: wrap; text-align: center; margin-top: 40px; }
-        .contact-item { margin: 20px; padding: 20px; min-width: 200px; background: #f9f9f9; border-radius: 10px; }
-        .contact-item i { font-size: 2rem; color: #00d2ff; margin-bottom: 15px; }
-        footer { background: #1a1a2e; color: #fff; text-align: center; padding: 30px; margin-top: 60px; }
-        @media (max-width: 768px) { #home h1 { font-size: 2.2rem; } nav ul { display: none; } }
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: stretch;
+            overflow: hidden; /* যাতে স্ক্রিন নড়াচড়া না করে */
+        }
+        h1 {
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            flex-grow: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: white;
+            font-family: sans-serif;
+        }
     </style>
 </head>
 <body>
-    <nav>
-        <div class="logo">Nextgen-logic</div>
-        <ul>
-            <li><a href="#home">হোম</a></li>
-            <li><a href="#about">আমাদের সম্পর্কে</a></li>
-            <li><a href="#services">সেবা</a></li>
-            <li><a href="#contact">যোগাযোগ</a></li>
-        </ul>
-    </nav>
-    <section id="home">
-        <h1>Nextgen-logic-এ স্বাগতম</h1>
-        <p>আমরা উদ্ভাবনী চিন্তা এবং উন্নত প্রযুক্তির মাধ্যমে আধুনিক সমস্যার ডিজিটাল সমাধান তৈরি করি।</p>
-    </section>
-    <section id="about">
-        <div style="text-align: center;">
-            <h2>আমাদের সম্পর্কে</h2>
-            <p style="max-width: 800px; margin: 20px auto; font-size: 1.1rem; color: #555;">Nextgen-logic একটি অত্যাধুনিক প্রযুক্তি ভিত্তিক প্রতিষ্ঠান। আমাদের লক্ষ্য হলো ব্যবসার প্রসারে আধুনিক ডিজিটাল টুলস এবং লজিক-ভিত্তিক সমাধান প্রদান করা। আমরা বিশ্বাস করি সঠিক প্রযুক্তির ব্যবহার জীবনকে আরও সহজ করে তোলে।</p>
-        </div>
-    </section>
-    <section id="services">
-        <div style="text-align: center;"><h2>আমাদের সেবাসমূহ</h2></div>
-        <div class="services-container">
-            <div class="service-box">
-                <i class="fas fa-laptop-code"></i>
-                <h3>ওয়েব ডেভেলপমেন্ট</h3>
-                <p>আপনার ব্যবসার জন্য আধুনিক, রেসপনসিভ এবং দ্রুতগতির ওয়েবসাইট তৈরি করা আমাদের প্রধান কাজ।</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-microchip"></i>
-                <h3>লজিক ডিজাইন</h3>
-                <p>জটিল ব্যবসায়িক সমস্যাগুলোর সহজ এবং কার্যকর ডিজিটাল সমাধান ডিজাইন করি।</p>
-            </div>
-            <div class="service-box">
-                <i class="fas fa-shield-alt"></i>
-                <h3>সাইবার সিকিউরিটি</h3>
-                <p>আপনার ডিজিটাল সম্পদ এবং ডেটা সুরক্ষিত রাখতে আমরা আধুনিক নিরাপত্তা ব্যবস্থা নিশ্চিত করি।</p>
-            </div>
-        </div>
-    </section>
-    <section id="contact">
-        <div style="text-align: center;"><h2>যোগাযোগ করুন</h2></div>
-        <div class="contact-info">
-            <div class="contact-item"><i class="fas fa-envelope"></i><p>info@nextgen-logic.com</p></div>
-            <div class="contact-item"><i class="fas fa-phone"></i><p>+৮৮০ ১XXX XXXXXX</p></div>
-            <div class="contact-item"><i class="fas fa-map-marker-alt"></i><p>ঢাকা, বাংলাদেশ</p></div>
-        </div>
-    </section>
-    <footer>
-        <p>&copy; 2026 Nextgen-logic | All Rights Reserved</p>
-        <p style="font-size: 0.8rem; margin-top: 10px; color: #00d2ff;">System ID: G-1NXQSWVVCT</p>
-    </footer>
+
+<h1 style="background-color:Tomato;">Hhhh.</h1>
+<h1 style="background-color:Orange;">Hhhh.</h1>
+<h1 style="background-color:DodgerBlue;">Hhhh.</h1>
+<h1 style="background-color:MediumSeaGreen;">Hhhh.</h1>
+<h1 style="background-color:Gray;">Hhhh.</h1>
+<h1 style="background-color:SlateBlue;">Hhhh.</h1>
+<h1 style="background-color:Violet;">ALL OF US ARE SLEEPING </h1>
+<h1 style="background-color:LightGray;">TELL ME A JOKE</h1>
+
 </body>
 </html>
